@@ -22,8 +22,8 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Show next config
-        run: cat next.config.ts
+      - name: Show Next config
+        run: cat next.config.mjs
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
