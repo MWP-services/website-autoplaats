@@ -1,15 +1,9 @@
 import { cars } from "@/data/cars";
+import { AanbodClient } from "@/app/aanbod/AanbodClient";
 import { ContactCTA } from "@/components/public/ContactCTA";
-import { InventoryGrid } from "@/components/public/InventoryGrid";
 import { SiteShell } from "@/components/public/SiteShell";
 
-type AanbodPageProps = {
-  searchParams?: Promise<{ zoek?: string }>;
-};
-
-export default async function AanbodPage({ searchParams }: AanbodPageProps) {
-  const params = await searchParams;
-
+export default function AanbodPage() {
   return (
     <SiteShell>
       <section className="bg-white py-10 lg:py-14">
@@ -21,7 +15,7 @@ export default async function AanbodPage({ searchParams }: AanbodPageProps) {
           </p>
         </div>
       </section>
-      <InventoryGrid cars={cars} initialQuery={params?.zoek ?? ""} />
+      <AanbodClient cars={cars} />
       <ContactCTA />
     </SiteShell>
   );

@@ -23,7 +23,7 @@ jobs:
           lfs: false
 
       - name: Show Next config
-        run: cat next.config.mjs
+        run: cat next.config.js
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
