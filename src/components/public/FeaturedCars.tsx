@@ -9,14 +9,14 @@ export function FeaturedCars({ cars }: { cars: Car[] }) {
       <div className="container-page">
         <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <h2 className="text-3xl font-black text-ink">Uitgelicht aanbod</h2>
+            <h2 className="text-3xl font-black text-ink">Uitgelichte Seat Leon</h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              Auto’s professioneel gepresenteerd met duidelijke specificaties, grote foto’s en
-              snelle contactmogelijkheden.
+              De Seat Leon FR staat centraal in deze proefwebsite: grote foto&apos;s, duidelijke
+              specificaties en direct contact voor een bezichtiging of proefrit.
             </p>
           </div>
-          <Link href="/aanbod" className="inline-flex items-center gap-2 text-sm font-extrabold text-night">
-            Alle auto’s bekijken <ArrowRightIcon />
+          <Link href="/aanbod" className="inline-flex items-center gap-2 text-sm font-extrabold text-gold">
+            Alle auto&apos;s bekijken <ArrowRightIcon />
           </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

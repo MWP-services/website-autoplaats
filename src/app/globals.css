@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  background: #f4f6f8;
+  background: #f3f4f6;
   color: #111827;
 }
 
@@ -43,5 +43,5 @@ textarea {
 }
 
 .focus-ring:focus-visible {
-  outline-color: #b88a2d;
+  outline-color: #f05a28;
 }

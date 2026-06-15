@@ -31,7 +31,7 @@ export function CarCard({ car }: { car: Car }) {
             <h2 className="text-xl font-black text-ink">{car.title}</h2>
             <p className="mt-1 text-sm font-semibold text-steel">{showValue(car.version)}</p>
           </div>
-          <p className="text-right text-lg font-black text-night">{formatPrice(car.price)}</p>
+          <p className="shrink-0 text-right text-lg font-black text-gold">{formatPrice(car.price)}</p>
         </div>
 
         <dl className="grid grid-cols-2 gap-3 border-y border-line py-4 text-sm">
@@ -72,7 +72,7 @@ export function CarCard({ car }: { car: Car }) {
             href={getWhatsappHref(car)}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded border border-line px-4 text-sm font-extrabold text-ink transition hover:border-gold"
+            className="inline-flex h-12 items-center justify-center rounded border border-gold px-4 text-sm font-extrabold text-gold transition hover:bg-gold hover:text-white"
           >
             WhatsApp
           </a>

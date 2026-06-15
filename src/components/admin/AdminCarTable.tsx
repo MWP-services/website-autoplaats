@@ -13,7 +13,7 @@ export function AdminCarTable({ cars }: { cars: Car[] }) {
     <div className="overflow-hidden rounded-lg border border-line bg-white shadow-card">
       <div className="flex flex-col justify-between gap-4 border-b border-line p-5 sm:flex-row sm:items-center">
         <div>
-          <h2 className="text-xl font-black text-ink">Auto’s</h2>
+          <h2 className="text-xl font-black text-ink">Auto&apos;s</h2>
           <p className="mt-1 text-sm text-slate-600">Beheer de voorraad die op de website getoond wordt.</p>
         </div>
         <Link

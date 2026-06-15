@@ -11,7 +11,7 @@ export default function AdminLoginPage() {
             <BrandLogo size="lg" />
           </div>
           <h1 className="text-3xl font-black text-ink">{dealerConfig.name} beheer</h1>
-          <p className="mt-2 text-sm font-semibold text-slate-600">Log in om auto’s te beheren.</p>
+          <p className="mt-2 text-sm font-semibold text-slate-600">Log in om auto&apos;s te beheren.</p>
         </div>
         <form className="grid gap-4">
           <label className="grid gap-2">

@@ -9,7 +9,7 @@ export function ContactCTA() {
           <div>
             <h2 className="text-3xl font-black">Interesse in een auto?</h2>
             <p className="mt-3 max-w-2xl text-slate-300">
-              Stel direct je vraag, plan een bezichtiging of laat weten welke auto je zoekt.
+              Stel direct je vraag, plan een bezichtiging of vraag meer informatie over de Seat Leon.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-none">
@@ -17,7 +17,7 @@ export function ContactCTA() {
               href={getWhatsappHref()}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded bg-gold px-5 text-sm font-extrabold text-night"
+              className="inline-flex h-12 items-center justify-center rounded bg-gold px-5 text-sm font-extrabold text-white"
             >
               WhatsApp direct
             </a>

@@ -30,10 +30,10 @@ export function formatBoolean(value: boolean | null) {
 
 export function getWhatsappHref(car?: Car, action = "interesse") {
   const text = car
-    ? `Hallo, ik heb interesse in de ${car.title} ${car.fuel ?? ""} uit ${
+    ? `Hallo, ik heb interesse in de ${car.title} uit ${
         car.year ?? "onbekend bouwjaar"
       } die ik op jullie website zag.`
-    : `Hallo Autoplaats, ik wil graag contact over jullie actuele aanbod.`;
+    : `Hallo ${dealerConfig.name}, ik wil graag contact over jullie actuele aanbod.`;
 
   const cleanNumber = dealerConfig.whatsapp.replace(/\D/g, "");
   const encodedText = encodeURIComponent(text.replace(/\s+/g, " ").trim());

@@ -9,7 +9,7 @@ export function MobileStickyCTA() {
           href={getWhatsappHref()}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex h-12 items-center justify-center rounded bg-gold px-4 text-sm font-extrabold text-night"
+          className="inline-flex h-12 items-center justify-center rounded bg-gold px-4 text-sm font-extrabold text-white"
         >
           WhatsApp
         </a>

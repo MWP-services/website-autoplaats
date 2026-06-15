@@ -19,19 +19,18 @@ export default function HomePage() {
       <section className="bg-mist py-16">
         <div className="container-page grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
-            <h2 className="text-3xl font-black text-ink">Van TikTok naar een professionele showroom</h2>
+            <h2 className="text-3xl font-black text-ink">Van TikTok-interesse naar een duidelijke showroom</h2>
             <p className="mt-4 leading-8 text-slate-700">
-              Autoplaats verkoopt nu vooral via TikTok. Deze proefwebsite laat zien hoe hetzelfde
-              aanbod professioneler, rustiger en commercieel sterker gepresenteerd kan worden:
-              met filters, detailpagina’s, duidelijke foto’s en directe contactmogelijkheden.
+              Krijnen Auto Te Koop krijgt met deze proefwebsite een strak, sportief en betrouwbaar
+              kanaal naast TikTok. Bezoekers kunnen rustig foto&apos;s bekijken, specificaties
+              vergelijken en direct contact opnemen voor een bezichtiging.
             </p>
           </div>
           <div className="rounded-lg border border-line bg-white p-6 shadow-card">
-            <h3 className="text-2xl font-black text-ink">TikTok blijft belangrijk</h3>
+            <h3 className="text-2xl font-black text-ink">TikTok blijft de snelle ingang</h3>
             <p className="mt-3 leading-7 text-slate-600">
-              Bezoekers die via {dealerConfig.tiktokHandle} binnenkomen kunnen meteen het actuele
-              aanbod bekijken, specificaties vergelijken en contact opnemen zonder eerst door losse
-              video’s of berichten te zoeken.
+              Bezoekers die via {dealerConfig.tiktokHandle} binnenkomen landen meteen op een
+              professionele presentatie met filters, detailinformatie en duidelijke contactknoppen.
             </p>
             <a
               href={dealerConfig.tiktokUrl}

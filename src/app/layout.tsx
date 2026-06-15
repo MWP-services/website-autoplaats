@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Autoplaats | Professionele occasions",
+  title: "Krijnen Auto Te Koop | Sportieve occasions",
   description:
-    "Bekijk het actuele occasionaanbod van Autoplaats en neem direct contact op voor een bezichtiging.",
+    "Bekijk het actuele occasionaanbod van Krijnen Auto Te Koop en neem direct contact op voor een bezichtiging.",
 };
 
 export default function RootLayout({

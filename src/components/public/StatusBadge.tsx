@@ -13,7 +13,7 @@ export function StatusBadge({ label, status }: StatusBadgeProps) {
   return (
     <span
       className={`inline-flex items-center rounded px-2.5 py-1 text-xs font-extrabold ${
-        isSold ? "bg-slate-900 text-white" : "bg-[#f2e3c1] text-[#604313]"
+        isSold ? "bg-slate-900 text-white" : "bg-gold text-white"
       }`}
     >
       {text}

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: DetailPageProps) {
   const { slug } = await params;
   const car = cars.find((item) => item.slug === slug);
   return {
-    title: car ? `${car.title} | Autoplaats` : "Auto niet gevonden | Autoplaats",
+    title: car ? `${car.title} | Krijnen Auto Te Koop` : "Auto niet gevonden | Krijnen Auto Te Koop",
   };
 }
 

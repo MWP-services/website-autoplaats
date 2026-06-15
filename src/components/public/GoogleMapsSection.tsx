@@ -1,6 +1,9 @@
 import { dealerConfig } from "@/data/dealerConfig";
 
 export function GoogleMapsSection() {
+  const hasMapsUrl = dealerConfig.googleMapsUrl.startsWith("http");
+  const mapsHref = hasMapsUrl ? dealerConfig.googleMapsUrl : "#";
+
   return (
     <section className="rounded-lg border border-line bg-white p-6 shadow-card">
       <div className="mb-5 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
@@ -9,9 +12,10 @@ export function GoogleMapsSection() {
           <p className="mt-1 text-sm font-semibold text-steel">{dealerConfig.address}</p>
         </div>
         <a
-          href={dealerConfig.googleMapsUrl}
-          target="_blank"
-          rel="noreferrer"
+          href={mapsHref}
+          target={hasMapsUrl ? "_blank" : undefined}
+          rel={hasMapsUrl ? "noreferrer" : undefined}
+          aria-disabled={!hasMapsUrl}
           className="inline-flex h-12 items-center justify-center rounded bg-night px-5 text-sm font-extrabold text-white"
         >
           Navigeer via Google Maps

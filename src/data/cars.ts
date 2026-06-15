@@ -15,6 +15,7 @@ export type Car = {
   mileage: number | null;
   powerHp: number | null;
   powerKw: number | null;
+  engineSize?: string | null;
   engineSizeCc: number | null;
   cylinders?: number | null;
   fuel: string | null;
@@ -31,56 +32,100 @@ export type Car = {
   keys?: number | null;
   featured: boolean;
   status: CarStatus;
+  badges?: string[];
   labels: string[];
   images: string[];
   options: string[];
+  attentionPoints?: string[];
   description: string;
+  descriptionSections?: {
+    title: string;
+    body?: string;
+    items?: string[];
+  }[];
 };
 
 export const cars: Car[] = [
   {
-    id: "audi-a4-36-jjz-6",
-    slug: "audi-a4-avant-benzine-2008-36-jjz-6",
-    licensePlate: "36-JJZ-6",
-    brand: "Audi",
-    model: "A4",
-    title: "Audi A4 Avant Benzine",
-    version: "Uitvoering nog invullen",
+    id: "seat-leon-x-634-fv",
+    slug: "seat-leon-fr-14-tsi-90kw-2013-x-634-fv",
+    licensePlate: "X-634-FV",
+    brand: "Seat",
+    model: "Leon",
+    title: "Seat Leon FR 1.4 TSI 90KW",
+    version: "FR 1.4 TSI 90KW",
     price: null,
-    year: 2008,
-    buildMonth: "Oktober 2008",
-    firstRegistration: "25-10-2008",
-    mileage: null,
-    powerHp: 210,
-    powerKw: 155,
-    engineSizeCc: 2000,
-    cylinders: 4,
+    year: 2013,
+    firstRegistration: null,
+    mileage: 148000,
+    powerHp: 122,
+    powerKw: 90,
+    engineSize: "1.4 liter",
+    engineSizeCc: null,
     fuel: "Benzine",
-    transmission: null,
-    bodyType: "Stationwagen",
-    color: "Grijs",
-    doors: 4,
+    transmission: "Handgeschakeld 6 versnellingen",
+    bodyType: "Hatchback",
+    color: "Zwart",
+    doors: 5,
     seats: 5,
-    apk: "26-01-2027",
+    apk: "31 augustus 2026",
     nap: null,
-    imported: true,
-    wokStatus: "Geen WOK-status",
+    imported: null,
+    wokStatus: null,
     maintenanceBooklets: null,
     keys: null,
     featured: true,
     status: "published",
-    labels: ["Net binnen", "APK", "Uitgelicht"],
+    badges: ["FR-uitvoering", "Stage 1", "APK tot 2026", "Sportief"],
+    labels: ["FR-uitvoering", "Stage 1", "APK tot 2026", "Sportief"],
     images: [
-      "/cars/audi-a4/1.jpg",
-      "/cars/audi-a4/2.jpg",
-      "/cars/audi-a4/3.jpg",
-      "/cars/audi-a4/4.jpg",
-      "/cars/audi-a4/5.jpg",
-      "/cars/audi-a4/6.jpg",
-      "/cars/audi-a4/7.jpg",
+      "/cars/seat-leon/1.png",
+      "/cars/seat-leon/2.png",
+      "/cars/seat-leon/3.png",
+      "/cars/seat-leon/4.png",
+      "/cars/seat-leon/5.png",
+      "/cars/seat-leon/6.png",
+      "/cars/seat-leon/8.png",
+      "/cars/seat-leon/9.png",
     ],
-    options: [],
+    options: [
+      "FR-uitvoering",
+      "Sfeervolle interieurverlichting",
+      "Verlichting bedienbaar via telefoon",
+      "Stage 1 gechipt",
+      "Middendemper delete",
+    ],
+    attentionPoints: [
+      "Hoedenplank werkt niet helemaal zoals het hoort; bevestigingspuntjes zijn gebroken.",
+    ],
     description:
-      "Nette Audi A4 stationwagen uit 2008 met benzinemotor en 210 pk. Ruime en comfortabele auto met sportieve uitstraling. Kilometerstand, prijs, transmissie en opties worden nog toegevoegd.",
+      "Te koop aangeboden: Seat Leon FR uit 2013. De auto heeft momenteel 148.000 km gereden en is altijd goed onderhouden. De auto rijdt en schakelt goed en heeft een sportieve uitstraling.",
+    descriptionSections: [
+      {
+        title: "Algemeen",
+        body:
+          "Te koop aangeboden: Seat Leon FR uit 2013. De auto heeft momenteel 148.000 km gereden en is altijd goed onderhouden. Onderhoud is tijdig uitgevoerd en de auto heeft geen achterstallig onderhoud.",
+      },
+      {
+        title: "Staat en rijbeleving",
+        body:
+          "De auto is zorgvuldig behandeld, zowel van binnen als van buiten. Het betreft een fijne, betrouwbare en sportief ogende hatchback die nog jarenlang rijplezier kan bieden.",
+      },
+      {
+        title: "Extra's",
+        items: [
+          "Sfeervolle interieurverlichting, zelf geinstalleerd",
+          "Verlichting is via de telefoon te bedienen en naar wens in te stellen",
+          "FR-uitvoering met sportieve uitstraling",
+          "Stage 1 gechipt",
+          "Middendemper delete voor een sportiever geluid, maar niet overdreven",
+        ],
+      },
+      {
+        title: "Afspraak maken",
+        body:
+          "De auto rijdt en schakelt goed en is altijd met zorg behandeld. Bij serieuze interesse kan er contact worden opgenomen voor meer informatie, een bezichtiging of een proefrit.",
+      },
+    ],
   },
 ];

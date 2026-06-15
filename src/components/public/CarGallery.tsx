@@ -9,7 +9,7 @@ export function CarGallery({ images, title }: { images: string[]; title: string 
 
   return (
     <div className="grid gap-4">
-      <div className="overflow-hidden rounded-lg bg-slate-100 shadow-soft">
+      <div className="overflow-hidden rounded-lg bg-slate-900 shadow-soft ring-1 ring-black/5">
         <Image
           src={selected}
           alt={`${title} foto ${active + 1}`}

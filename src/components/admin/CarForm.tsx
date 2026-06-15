@@ -5,7 +5,7 @@ import type { Car, CarStatus } from "@/data/cars";
 import { StatusSelector } from "@/components/admin/StatusSelector";
 import { ImageUploader } from "@/components/admin/ImageUploader";
 
-const steps = ["Foto’s", "Basisgegevens", "Specificaties", "Publiceren"];
+const steps = ["Foto's", "Basisgegevens", "Specificaties", "Publiceren"];
 
 function TextField({
   label,
@@ -72,9 +72,9 @@ export function CarForm({ car }: { car?: Car }) {
       >
         {step === 0 ? (
           <section className="grid gap-4">
-            <h2 className="text-2xl font-black text-ink">Foto’s</h2>
+            <h2 className="text-2xl font-black text-ink">Foto&apos;s</h2>
             <p className="text-sm font-semibold text-slate-600">
-              Upload duidelijke foto’s. De eerste foto wordt gebruikt als hoofdfoto.
+              Upload duidelijke foto&apos;s. De eerste foto wordt gebruikt als hoofdfoto.
             </p>
             <ImageUploader existingImages={car?.images} />
           </section>
@@ -88,7 +88,7 @@ export function CarForm({ car }: { car?: Car }) {
               <TextField label="Merk" defaultValue={car?.brand} />
               <TextField label="Model" defaultValue={car?.model} />
               <TextField label="Uitvoering" defaultValue={car?.version} />
-              <TextField label="Prijs" type="number" helper="Laat prijs leeg als je ‘Prijs op aanvraag’ wilt tonen" defaultValue={car?.price} />
+              <TextField label="Prijs" type="number" helper="Laat prijs leeg als je 'Prijs op aanvraag' wilt tonen" defaultValue={car?.price} />
               <TextField label="Bouwjaar" type="number" defaultValue={car?.year} />
               <TextField label="Kilometerstand" type="number" defaultValue={car?.mileage} />
             </div>
@@ -106,7 +106,7 @@ export function CarForm({ car }: { car?: Car }) {
               <TextField label="Kleur" defaultValue={car?.color} />
               <TextField label="APK" defaultValue={car?.apk} />
               <TextField label="NAP" placeholder="Nog niet ingevuld" defaultValue={car?.nap} />
-              <TextField label="Opties" helper="Scheid opties met komma’s" placeholder="Bijv. airco, cruise control" />
+              <TextField label="Opties" helper="Scheid opties met komma's" placeholder="Bijv. airco, cruise control" />
             </div>
           </section>
         ) : null}
@@ -134,14 +134,14 @@ export function CarForm({ car }: { car?: Car }) {
                 type="checkbox"
                 checked={featured}
                 onChange={(event) => setFeatured(event.target.checked)}
-                className="h-5 w-5 accent-[#b88a2d]"
+                className="h-5 w-5 accent-[#f05a28]"
               />
               Uitgelicht tonen op de homepagina
             </label>
             <div className="rounded border border-line bg-mist p-4">
               <p className="text-sm font-black text-ink">Preview</p>
               <p className="mt-1 text-sm text-slate-600">
-                Controleer titel, prijs, status en foto’s voordat je publiceert.
+                Controleer titel, prijs, status en foto&apos;s voordat je publiceert.
               </p>
             </div>
           </section>
@@ -165,7 +165,7 @@ export function CarForm({ car }: { car?: Car }) {
               Volgende stap
             </button>
           ) : (
-            <button className="h-12 rounded bg-gold px-5 text-sm font-extrabold text-night">
+            <button className="h-12 rounded bg-gold px-5 text-sm font-extrabold text-white">
               Publiceren
             </button>
           )}

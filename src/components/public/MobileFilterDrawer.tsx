@@ -46,7 +46,7 @@ export function MobileFilterDrawer({ cars, filters, onChange }: MobileFilterDraw
             <FilterSidebar cars={cars} filters={filters} onChange={onChange} />
             <button
               type="button"
-              className="mt-4 h-12 w-full rounded bg-gold text-sm font-extrabold text-night"
+              className="mt-4 h-12 w-full rounded bg-gold text-sm font-extrabold text-white"
               onClick={() => setOpen(false)}
             >
               Resultaten tonen

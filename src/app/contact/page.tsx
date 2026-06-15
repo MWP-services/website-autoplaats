@@ -9,7 +9,7 @@ export default function ContactPage() {
     <SiteShell>
       <section className="bg-white py-14 lg:py-20">
         <div className="container-page">
-          <h1 className="text-4xl font-black text-ink lg:text-5xl">Contact met Autoplaats</h1>
+          <h1 className="text-4xl font-black text-ink lg:text-5xl">Contact met Krijnen Auto Te Koop</h1>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
             Neem contact op voor vragen over het aanbod of om een bezichtiging op afspraak te plannen.
           </p>
@@ -47,7 +47,7 @@ export default function ContactPage() {
               <div>
                 <dt className="font-extrabold text-steel">TikTok</dt>
                 <dd className="mt-1">
-                  <a className="font-extrabold text-navy" href={dealerConfig.tiktokUrl} target="_blank" rel="noreferrer">
+                  <a className="font-extrabold text-gold" href={dealerConfig.tiktokUrl} target="_blank" rel="noreferrer">
                     {dealerConfig.tiktokHandle}
                   </a>
                 </dd>
@@ -57,7 +57,7 @@ export default function ContactPage() {
               href={getWhatsappHref()}
               target="_blank"
               rel="noreferrer"
-              className="mt-6 inline-flex h-12 w-full items-center justify-center rounded bg-gold px-5 text-sm font-extrabold text-night"
+              className="mt-6 inline-flex h-12 w-full items-center justify-center rounded bg-gold px-5 text-sm font-extrabold text-white"
             >
               WhatsApp direct
             </a>

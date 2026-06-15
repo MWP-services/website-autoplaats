@@ -64,7 +64,7 @@ export function InventoryGrid({ cars, initialQuery = "" }: { cars: Car[]; initia
               </div>
             ) : (
               <div className="rounded-lg border border-line bg-white p-8 text-center shadow-card">
-                <h2 className="text-2xl font-black text-ink">Geen auto’s gevonden</h2>
+                <h2 className="text-2xl font-black text-ink">Geen auto&apos;s gevonden</h2>
                 <p className="mt-2 text-slate-600">Pas je filters aan of neem contact op over aankomend aanbod.</p>
               </div>
             )}

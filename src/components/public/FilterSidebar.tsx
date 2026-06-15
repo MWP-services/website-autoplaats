@@ -56,7 +56,7 @@ export function FilterSidebar({ cars, filters, onChange }: FilterSidebarProps) {
               option: "",
             })
           }
-          className="text-xs font-extrabold text-navy"
+          className="text-xs font-extrabold text-gold"
         >
           Wissen
         </button>
@@ -124,7 +124,7 @@ export function FilterSidebar({ cars, filters, onChange }: FilterSidebarProps) {
         </Field>
         <Field label="Carrosserie">
           <select className={inputClass} value={filters.bodyType} onChange={(event) => update("bodyType", event.target.value)}>
-            <option value="">Alle carrosserieën</option>
+            <option value="">Alle carrosserieen</option>
             {uniqueValues(cars, "bodyType").map((value) => (
               <option key={value}>{value}</option>
             ))}
@@ -133,7 +133,7 @@ export function FilterSidebar({ cars, filters, onChange }: FilterSidebarProps) {
         <Field label="Opties">
           <input
             className={inputClass}
-            placeholder="Bijv. trekhaak"
+            placeholder="Bijv. Stage 1"
             value={filters.option}
             onChange={(event) => update("option", event.target.value)}
           />

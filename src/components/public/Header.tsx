@@ -20,10 +20,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-night text-white shadow-sm">
       <div className="container-page flex min-h-20 items-center justify-between gap-5">
-        <Link href="/" className="flex items-center gap-3" aria-label="Autoplaats home">
+        <Link href="/" className="flex items-center gap-3" aria-label="Krijnen Auto Te Koop home">
           <BrandLogo />
           <span>
-            <span className="block text-lg font-extrabold tracking-wide">{dealerConfig.name}</span>
+            <span className="block text-base font-extrabold tracking-wide sm:text-lg">{dealerConfig.name}</span>
             <span className="hidden text-xs text-slate-300 sm:block">{dealerConfig.slogan}</span>
           </span>
         </Link>
@@ -47,7 +47,7 @@ export function Header() {
             href={getWhatsappHref()}
             target="_blank"
             rel="noreferrer"
-            className="rounded bg-gold px-4 py-2 text-sm font-extrabold text-night transition hover:bg-[#d2a13f]"
+            className="rounded bg-gold px-4 py-2 text-sm font-extrabold text-white transition hover:bg-ember"
           >
             WhatsApp
           </a>
@@ -82,7 +82,7 @@ export function Header() {
               Aanbod
             </Link>
             <a
-              className="rounded bg-gold px-4 py-3 text-center text-sm font-extrabold text-night"
+              className="rounded bg-gold px-4 py-3 text-center text-sm font-extrabold text-white"
               href={getWhatsappHref()}
               target="_blank"
               rel="noreferrer"
